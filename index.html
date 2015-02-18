@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Tiny Pizza BB</title>
+  <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+    <form class="js-toot-input">
+      <input type="text" class="new-toot js-new-toot" placeholder="What's up?">
+    </form>
+    <ul class="toots js-toots">
+    </ul>
+
+  <script type="text/template" id="toot-template">
+    <%= body %>
+    <button class="js-destroy">X</button>
+  </script>
+
+  <script src="bower_components/jquery/dist/jquery.js"></script>
+  <script src="bower_components/underscore/underscore.js"></script>
+  <script src="bower_components/backbone/backbone.js"></script>
+
+  <script src="scripts/main.js"></script>
+</body>
+</html>
